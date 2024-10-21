@@ -4,11 +4,11 @@ from ultralytics import YOLO
 
 model = YOLO("helmet.pt")
 font = cv2.FONT_HERSHEY_COMPLEX
-kamera = cv2.VideoCapture(0)
+cam = cv2.VideoCapture(0)
 
 
 while True:
-    ret, frame = kamera.read()
+    ret, frame = cam.read()
     if not ret:
         break
 
